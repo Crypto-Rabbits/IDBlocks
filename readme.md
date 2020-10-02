@@ -1,5 +1,7 @@
 # blockchainlayer
 
+Generated with help from the starport utility.
+
 **blockchainlayer** is a blockchain application built using Cosmos SDK and Tendermint and generated with [Starport](https://github.com/tendermint/starport).
 
 ## Get started
