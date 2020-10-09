@@ -13,3 +13,11 @@ const (
 	// QuerierRoute to be used for querier msgs
 	QuerierRoute = ModuleName
 )
+
+const (
+	PostPrefix = "post-"
+)
+
+const (
+	CommentPrefix = "comment-"
+)

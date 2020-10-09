@@ -9,7 +9,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/client/flags"
 
-	// "github.com/cosmos/cosmos-sdk/client/context"
+	"github.com/cosmos/cosmos-sdk/client/context"
 	"github.com/cosmos/cosmos-sdk/codec"
 	// sdk "github.com/cosmos/cosmos-sdk/types"
 
@@ -29,9 +29,28 @@ func GetQueryCmd(queryRoute string, cdc *codec.Codec) *cobra.Command {
 
 	blockchainlayerQueryCmd.AddCommand(
 		flags.GetCommands(
+			GetCmdListPost(queryRoute, cdc),
       // this line is used by starport scaffolding # 1
 		)...,
 	)
 
 	return blockchainlayerQueryCmd
+}
+
+func GetCmdListPost(queryRoute string, cdc *codec.Codec) *cobra.Command {
+	return &cobra.Command{
+		Use:   "list-post",
+		Short: "list all post",
+		RunE: func(cmd *cobra.Command, args []string) error {
+			cliCtx := context.NewCLIContext().WithCodec(cdc)
+			res, _, err := cliCtx.QueryWithData(fmt.Sprintf("custom/%s/"+types.QueryListPost, queryRoute), nil)
+			if err != nil {
+				fmt.Printf("could not list Post\n%s\n", err.Error())
+				return nil
+			}
+			var out []types.Post
+			cdc.MustUnmarshalJSON(res, &out)
+			return cliCtx.PrintOutput(out)
+		},
+	}
 }
