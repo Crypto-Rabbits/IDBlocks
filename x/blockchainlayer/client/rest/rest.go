@@ -10,8 +10,8 @@ import (
 
 // RegisterRoutes registers blockchainlayer-related REST handlers to a router
 func RegisterRoutes(cliCtx context.CLIContext, r *mux.Router) {
-	r.HandleFunc("/idblocks/posts", listPostHandler(cliCtx, "blog")).Methods("GET")
-	r.HandleFunc("/blog/posts", createPostHandler(cliCtx)).Methods("POST")
+	r.HandleFunc("/blockchainlayer/posts", listPostHandler(cliCtx, "blog")).Methods("GET")
+	r.HandleFunc("/blockchainlayer/posts", createPostHandler(cliCtx)).Methods("POST")
 
   // this line is used by starport scaffolding # 1
 }
