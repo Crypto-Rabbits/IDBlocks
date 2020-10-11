@@ -175,13 +175,7 @@ body {
   /*--------------------------------------------------------------
   # Intro Section
   --------------------------------------------------------------*/
-  #intro {
-    width: 100%;
-    height: 60vh;
-    position: relative;
-    background: url("../img/intro-carousel/1.jpg") no-repeat;
-    background-size: cover;
-  }
+
   
   #intro .intro-content {
     position: absolute;
