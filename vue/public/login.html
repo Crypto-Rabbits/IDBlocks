@@ -36,32 +36,32 @@
   <!--==========================
     Intro Section
   ============================-->
-  <section id="intro">
-    <div class="intro-content">
-        <div class="container">
+  <section id="contact" class="wow fadeInUp">
+
+
+        <div class="row contact-info">
+
+      <div class="container">
         <div class="form">
-          <div id="sendmessage"></div>
+          <div id="sendmessage">Your message has been sent. Thank you!</div>
           <div id="errormessage"></div>
           <form action="" method="post" role="form" class="contactForm">
             <div class="form-row">
               <div class="form-group col-md-6">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <input type="text" name="username" class="form-control" id="username" placeholder="Your Username" data-rule="minlen:4" data-msg="Please enter your username" />
                 <div class="validation"></div>
               </div>
               <div class="form-group col-md-6">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                <input type="email" class="form-control" name="password" id="password" placeholder="Your password" data-rule="minlen:4" data-msg="Please enter a password" />
                 <div class="validation"></div>
               </div>
+            </div>
+            <div class="text-center"><button type="submit">Login</button></div>
           </form>
         </div>
 
       </div>
-
-      <div>
-        <a href="#about" class="btn-get-started scrollto">Login</a>
-      </div>
-    </div>
-  </section><!-- #intro -->
+    </section><!-- #contact -->
 
   </body>
 </html>
