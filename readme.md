@@ -2,7 +2,7 @@
 
 IDBlocks aims at being the first application to offer a reliable way to verify ownership of digital content by means of blockchain technology. It also offers a template for managing and verifying identity across various services. The main goal of the app was to provide transparency without betraying privacy. This was done by means of the blockchain technology being used, namely Cosmos.
 
-[IDBlocks by Crypto Rabbits](https://github.com/Crypto-Rabbits/IDBlocks/blob/master/image/LogoCryptoRabbits.jpeg)
+![IDBlocks by Crypto Rabbits](https://github.com/Crypto-Rabbits/IDBlocks/blob/master/image/LogoCryptoRabbits.jpeg)
 
 ## Core components
 
