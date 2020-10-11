@@ -19,6 +19,10 @@ for verification of ownership. Thus, we pave the ground to a larger image, namel
 
 Apart from what was described above, we aim at providing a more user-friendly interface, while highlighting the importance this application has. Namely, it allows anyone to verify and track their digital activity in a transparent , yet secure manner. On the subject of security and privacy...we aim at providing end-to-end encryption, such that the user is the sole capable entity of reading the contents. Apart from being a "digital stamp", our app is going to act like a "digital journal".
 
+## What we did best?
+
+We managed to create this application by following the template of a blogging app :) We changed the variables and a lot of other stuff , hacked together a neat UI and here we are with the demo :) The fact that we derived ownership and identity verification from a blogging app is, in our humble opinion,a neat and hacky thing :)
+
 ## Instructions
 
 The application requires these dependencies:
@@ -32,5 +36,7 @@ Axios is being used for the HTTP requests made for the server and cors as a prox
 ## Many thanks
 
 Thanks for the mentors who were always available on the Discord chat and taking a real interest in our application. In fact, we owe them with developing some critical details with our application.
+
+## The team
 
 Created by the Crypto-Rabbits team:) A team of students battling with University while loving to code and develop cool stuff.
