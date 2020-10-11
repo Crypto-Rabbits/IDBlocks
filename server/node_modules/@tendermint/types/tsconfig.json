@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "module":           "ESNext",
+        "moduleResolution": "Node",
+        "noEmit":           true,
+        "strict":           true,
+        "target":           "ESNext"
+    },
+    "include":         [
+        "index.d.ts",
+        "types/**/*"
+    ],
+    "typedocOptions":  {
+        "out":                    "docs",
+        "mode":                   "file",
+        "readme":                 "none",
+        "ignoreCompilerErrors":   true,
+        "includeDeclarations":    true,
+        "excludeNotExported":     true,
+        "excludeExternals":       true,
+        "listInvalidSymbolLinks": true
+    }
+}

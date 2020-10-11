@@ -1,0 +1,21 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "preserve": "lcp --proxyUrl http://localhost:1317 &",
+    "serve": "parcel index.html",
+    "postserve": "pkill -f lcp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tendermint/sig": "^0.6.0",
+    "axios": "^0.20.0",
+    "local-cors-proxy": "^1.1.0",
+    "parcel-bundler": "^1.12.4"
+  }
+}
